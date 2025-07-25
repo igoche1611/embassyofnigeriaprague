@@ -1,207 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nigerian Embassy in Prague</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embassy of Nigeria - Prague</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
     body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
       background-color: #f4f4f4;
-      color: #333;
     }
     header {
-      background-color: #008751;
+      background-color: #00703c;
       color: white;
-      padding: 20px 40px;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #005a2c;
+      padding: 10px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
+      gap: 15px;
     }
     nav a {
       color: white;
-      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
-    .hero {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/8/89/Prague_Castle_and_Charles_Bridge.jpg') center/cover no-repeat;
-      height: 60vh;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+    }
+    footer {
+      background-color: #333;
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-    }
-    .hero h1 {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .quick-links {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px auto;
-      max-width: 1000px;
-    }
-    .quick-links div {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 30%;
-    }
-    section {
-      padding: 40px;
-      background: white;
-      margin: 20px auto;
-      max-width: 1000px;
-      border-radius: 8px;
-    }
-    .footer {
-      background-color: #eee;
-      text-align: center;
-      font-size: 14px;
-    }
-    ul {
-      margin-top: 10px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    form input, form textarea, form button {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .faq h4 {
-      margin-top: 10px;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Nigerian Embassy, Prague</h2>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#forms">Forms</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Embassy of Nigeria, Prague</h1>
+    <p>Official Website</p>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to the Official Website of the Nigerian Embassy in Prague</h1>
-  </section>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="visa.html">Visa</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <section class="quick-links">
-    <div>
-      <h3>🛂 Visa & Passport</h3>
-      <p>Information about visa types and passport renewals.</p>
-    </div>
-    <div>
-      <h3>📄 Download Forms</h3>
-      <p>Find and download all required consular forms here.</p>
-    </div>
-    <div>
-      <h3>📞 Contact & Appointments</h3>
-      <p>Reach us or book a consular appointment.</p>
-    </div>
-  </section>
+  <main>
+    <h2>Welcome</h2>
+    <p>Welcome to the official website of the Embassy of Nigeria in Prague. We serve the Nigerian community in the Czech Republic and promote diplomatic and economic relations between Nigeria and the Czech Republic.</p>
+  </main>
 
-  <section id="about">
-    <h2>About the Embassy</h2>
-    <p>The Nigerian Embassy in Prague represents the interests of Nigeria and provides a range of consular services to Nigerians and foreign nationals in the Czech Republic. We are committed to offering efficient and courteous service to all our visitors.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>Visa Services:</strong> Information and processing of different visa categories.</li>
-      <li><strong>Passport Renewal:</strong> Nigerian passport issuance and renewal support.</li>
-      <li><strong>Document Legalization:</strong> Legalization of official Nigerian documents for use in the Czech Republic.</li>
-      <li><strong>Emergency Travel Certificates:</strong> For Nigerian citizens in distress or without valid travel documents.</li>
-      <li><strong>Consular Registration:</strong> Registration of Nigerians living in the Czech Republic.</li>
-    </ul>
-  </section>
-
-  <section id="forms">
-    <h2>Forms & Downloads</h2>
-    <ul>
-      <li><a href="#">Visa Application Form (PDF)</a></li>
-      <li><a href="#">Passport Renewal Form (PDF)</a></li>
-      <li><a href="#">Emergency Travel Certificate Form (PDF)</a></li>
-      <li><a href="#">Consular Registration Form (PDF)</a></li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> Diplomatic District, Prague, Czech Republic</p>
-    <p><strong>Email:</strong> info@nigeriaembassy.cz</p>
-    <p><strong>Phone:</strong> +420 XXX XXX XXX</p>
-    <h3>Office Hours</h3>
-    <ul>
-      <li>Monday: 10:00 AM – 2:00 PM</li>
-      <li>Tuesday: 10:00 AM – 2:00 PM</li>
-      <li>Wednesday: 10:00 AM – 2:00 PM</li>
-      <li>Thursday: 10:00 AM – 2:00 PM</li>
-      <li>Friday: 10:00 AM – 1:00 PM</li>
-      <li>Saturday & Sunday: Closed</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Book an Appointment</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <input type="date" required>
-      <textarea placeholder="Reason for Appointment" required></textarea>
-      <button type="submit">Submit Request</button>
-    </form>
-  </section>
-
-  <section class="faq">
-    <h2>Frequently Asked Questions (FAQs)</h2>
-    <h4>1. How long does visa processing take?</h4>
-    <p>Visa processing typically takes 7–10 working days depending on the type of visa and completeness of documents.</p>
-
-    <h4>2. Can I renew my passport at the embassy?</h4>
-    <p>Yes. Please bring your old passport and completed renewal form. Processing takes 2–3 weeks.</p>
-
-    <h4>3. Do I need an appointment for consular services?</h4>
-    <p>Yes. All services require prior appointment using the form above or by calling the embassy.</p>
-
-    <h4>4. Is the embassy open on public holidays?</h4>
-    <p>No. The embassy observes both Nigerian and Czech public holidays.</p>
-  </section>
-
-  <section class="news">
-    <h2>Latest News</h2>
-    <ul>
-      <li>📢 Embassy closed on October 1st for Independence Day.</li>
-      <li>🗓️ New visa processing guidelines effective from September 2025.</li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Nigerian Embassy, Prague. All rights reserved.</p>
-    <p>Address: Diplomatic District, Prague, Czech Republic | Email: info@nigeriaembassy.cz | Phone: +420 XXX XXX XXX</p>
+  <footer>
+    &copy; 2025 Embassy of Nigeria, Prague. All rights reserved.
   </footer>
 </body>
 </html>
