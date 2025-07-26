@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit News - Embassy of Nigeria, Prague</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1 { color: #00703c; }
+    form { background: white; padding: 20px; border-radius: 5px; max-width: 600px; margin: auto; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 5px; }
+    button { background: #00703c; color: white; padding: 10px 20px; border: none; margin-top: 15px; cursor: pointer; }
+    button:hover { background: #005a2c; }
+  </style>
+</head>
+<body>
+  <h1>Submit a News Article</h1>
+  <form id="newsForm">
+    <label>News Title:</label>
+    <input type="text" id="title" required />
+
+    <label>Author:</label>
+    <input type="text" id="author" required />
+
+    <label>Date (e.g. July 25, 2025):</label>
+    <input type="text" id="date" required />
+
+    <label>Content:</label>
+    <textarea id="content" rows="10" required></textarea>
+
+    <button type="submit">Generate Article Code</button>
+  </form>
+
+  <div id="result" style="margin-top:30px; max-width:600px; background:#fff; padding:15px; display:none;">
+    <h2>Copy This HTML Code</h2>
+    <textarea id="codeOutput" rows="15" style="width:100%;"></textarea>
+  </div>
+
+  <script>
+    document.getElementById("newsForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const title = document.getElementById("title").value;
+      const author = document.getElementById("author").value;
+      const date = document.getElementById("date").value;
+      const content = document.getElementById("content").value.replace(/\n/g, "<br>");
+
+      const article = `
+<article>
+  <h3>${title}</h3>
+  <p><em>By ${author} — ${date}</em></p>
+  <p>${content}</p>
+</article>`;
+
+      document.getElementById("codeOutput").value = article.trim();
+      document.getElementById("result").style.display = "block";
+    });
+  </script>
+</body>
+</html>
