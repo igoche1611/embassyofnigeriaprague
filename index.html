@@ -27,6 +27,32 @@
   padding: 20px;
   border-radius: 10px;
 }
+    .hero-section {
+  background-image: url('images/embassy-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.welcome-box {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
     /* Responsive adjustments */
 @media (max-width: 768px) {
   nav {
