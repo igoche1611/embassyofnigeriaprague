@@ -2,289 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <div style="height: 1000px;"></div>
-  <meta name="description" content="Official website of the Embassy of Nigeria in Prague. Get information on visas, services, news, and more." />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Embassy of Nigeria - Prague</title>
-  <meta name="description" content="Official website of the Nigerian Embassy in Prague. Visa info, consular services, contact details, and more.">
-<meta name="keywords" content="Nigeria Embassy, Prague, Visa, Passport, Consular Services, Nigeria in Czech Republic">
-<meta name="author" content="Embassy of Nigeria, Prague">
-<meta name="robots" content="index, follow">
-<title>Embassy of Nigeria, Prague - Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Embassy of Nigeria, Prague</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    <style>
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    z-index: 1000;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  main {
-    margin-top: 80px; /* Make space for fixed header */
-  }
-</style>
-    <body class="home-page">
-  <div class="overlay-container">
-    <header>
-      ...
-    </header>
-    <main>
-      ...
-    </main>
-    <footer>
-      ...
-    </footer>
-  </div>
-</body>
-    body.home-page {
-  background: url('backgroundphoto.jpg.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: scroll;
-  position: relative;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.overlay-container {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
-  min-height: 100vh;
-  padding: 0;
-}
-    body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: url('backgroundphoto.jpg.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: scroll;
-  color: white; /* Ensure text is readable */
-}
-    main {
-  max-width: 900px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-  padding: 20px;
-  border-radius: 10px;
-}
-    .hero-section {
-  background-image: url('images/embassy-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 80px 20px;
-  color: black;
-  text-align: center;
-  position: relative;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
-}
-
-.welcome-box {
-  position: relative;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-    /* Responsive adjustments */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav a {
-    margin: 10px 0;
-  }
-  main {
-    padding: 10px;
-    width: 95%;
-  }
-  form input, form textarea, form button {
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
-
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background: url('images/bg.jpg') no-repeat center center;
+      background-size: cover;
+      background-attachment: scroll;
+      color: #fff;
     }
+
     header {
-      background-color: #00703c;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background-color: rgba(0, 51, 102, 0.9);
+      padding: 15px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
+
     nav {
-      background-color: #005a2c;
-      padding: 10px;
       display: flex;
-      justify-content: center;
-      gap: 15px;
+      justify-content: space-between;
+      align-items: center;
     }
+
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
+      padding: 100px 20px 40px;
+      background-color: rgba(0, 0, 0, 0.5);
     }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #00cc66;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
     footer {
-      background-color: #333;
-      color: white;
+      background-color: #003366;
+      color: #fff;
       text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 20px;
     }
-    header h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #004d1a; /* Darker green for headings */
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-}
-button {
-  background-color: #004d1a;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #006622;
-}
+
     @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  nav a {
-    display: block;
-    padding: 10px;
-  }
+      nav a {
+        margin: 10px 0 0;
+      }
 
-  main {
-    padding: 10px;
-  }
-
-  header h1 {
-    font-size: 24px;
-  }
-
-  header p {
-    font-size: 16px;
-  }
-
-  footer {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
+      main {
+        padding-top: 120px;
+      }
+    }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RMW24822E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3RMW24822E');
-</script>
 </head>
 <body>
+
   <header>
-    <h1>Embassy of Nigeria, Prague</h1>
-    <p>Official Website</p>
+    <nav>
+      <div><strong>Embassy of Nigeria - Prague</strong></div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="staff.html">Staff</a>
+        <a href="tourism.html">Tourism</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="consular.html">Consular</a>
-    <a href="visa.html">Visa</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="staff.html">Staff</a>
-    <a href="tourism.html">Tourism</a>
-    <a href="faq.html">FAQ</a>
-  </nav>
-  <div class="hero-section">
-</div>
-  <main class="container">
-  <section class="hero" style="text-align: center; padding: 60px 20px;">
-    <h2>Welcome to the Embassy of Nigeria, Prague</h2>
-    <p style="max-width: 700px; margin: 20px auto;">
-      The Embassy of the Federal Republic of Nigeria in Prague is dedicated to protecting the interests of Nigerian citizens,
-      promoting diplomatic relations, and enhancing cultural and economic ties between Nigeria and the Czech Republic.
-    </p>
-    <a href="contact.html" style="padding: 12px 24px; background-color: #008751; color: #fff; text-decoration: none; border-radius: 5px;">Contact Us</a>
-  </section>
+  <main>
+    <section id="welcome">
+      <h1>Welcome to the Nigerian Embassy in Prague</h1>
+      <p>
+        We are committed to strengthening the bilateral relationship between Nigeria and the Czech Republic,
+        providing consular services, promoting tourism, and supporting Nigerian citizens living in the Czech Republic.
+      </p>
+    </section>
 
-  <section class="mission" style="background-color: #f9f9f9; padding: 40px 20px;">
-    <h3 style="text-align: center;">Our Mission</h3>
-    <p style="max-width: 800px; margin: 20px auto;">
-      We strive to deliver high-quality consular services, promote Nigeria’s image abroad, and support our citizens with professionalism and efficiency.
-    </p>
-  </section>
+    <section id="mission">
+      <h2 class="section-title">Our Mission</h2>
+      <p>
+        To promote and protect the interests of Nigeria and its citizens in the Czech Republic,
+        enhance diplomatic ties, encourage investment, and support cultural exchange.
+      </p>
+    </section>
 
-  <section class="news-preview" style="padding: 40px 20px;">
-    <h3 style="text-align: center;">Latest News</h3>
-    <div style="max-width: 900px; margin: auto;">
-      <article style="margin-bottom: 30px;">
-        <h4><a href="news.html#news1">Ambassador Hosts Nigerian Students in Prague</a></h4>
-        <p>A warm evening of dialogue, mentorship, and culture as the Nigerian Embassy welcomes young scholars.</p>
-      </article>
-      <article>
-        <h4><a href="news.html#news2">Embassy Celebrates Nigeria's Independence Day</a></h4>
-        <p>Colorful celebrations, cultural displays, and unity mark Nigeria’s 64th Independence in Prague.</p>
-      </article>
-      <p style="text-align: right;"><a href="news.html">Read more news →</a></p>
-    </div>
-  </section>
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <ul>
+        <li>Visa Application and Processing</li>
+        <li>Passport Renewal</li>
+        <li>Document Legalization</li>
+        <li>Assistance for Nigerian Citizens</li>
+        <li>Trade & Investment Promotion</li>
+      </ul>
+    </section>
 
-  <section class="services" style="background-color: #f1f1f1; padding: 40px 20px;">
-    <h3 style="text-align: center;">Quick Services</h3>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-      <a href="visa.html" style="background: #008751; color: white; padding: 15px 25px; border-radius: 5px; text-decoration: none;">Visa Application</a>
-      <a href="services.html" style="background: #008751; color: white; padding: 15px 25px; border-radius: 5px; text-decoration: none;">Consular Services</a>
-      <a href="contact.html" style="background: #008751; color: white; padding: 15px 25px; border-radius: 5px; text-decoration: none;">Get in Touch</a>
-    </div>
-  </section>
-</main>
-<section style="background: #eaf7f0; padding: 20px; border-radius: 10px; margin-top: 30px;">
-  <h2 style="color: #00703c;">Upcoming Event</h2>
-  <h3 style="margin: 10px 0;">Nigerian Independence Day Celebration</h3>
-  <p><strong>Date:</strong> October 1, 2025</p>
-  <p>Join us for cultural performances, food, music, and celebration of Nigeria’s 65th Independence Anniversary at the Embassy grounds.</p>
-  <p><a href="events.html" style="color: #00703c; font-weight: bold;">See All Events &raquo;</a></p>
-</section>
-  
+    <section id="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>
+        Need assistance or information? Visit our <a href="contact.html" style="color: #00cc66;">Contact Page</a>.
+      </p>
+    </section>
+  </main>
+
   <footer>
-  <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
-  <p style="font-size: 14px;">Website developed with support by the Embassy Web Team.</p>
-</footer>
+    <p>&copy; 2025 Embassy of Nigeria, Prague. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
