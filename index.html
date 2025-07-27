@@ -2,40 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Embassy of Nigeria, Prague</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('images/bg.jpg') no-repeat center center;
+      font-family: 'Open Sans', sans-serif;
+      background: url('images/embassy-bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-attachment: scroll;
-      color: #fff;
+      color: #000;
     }
 
     header {
-      background-color: rgba(0, 51, 102, 0.9);
-      padding: 15px 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      background-color: rgba(0, 112, 60, 0.85);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
     }
 
     nav {
+      background-color: rgba(0, 90, 44, 0.9);
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
     }
 
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin: 10px 15px;
       font-weight: bold;
     }
 
@@ -44,107 +41,85 @@
     }
 
     main {
-      padding: 100px 20px 40px;
-      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
     }
 
     section {
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
 
-    h1, h2 {
-      color: #fff;
-    }
-
-    .section-title {
-      border-bottom: 2px solid #00cc66;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
+    h2 {
+      color: #00703c;
     }
 
     footer {
-      background-color: #003366;
-      color: #fff;
+      background: #333;
+      color: white;
       text-align: center;
       padding: 20px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
       nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
-
-      nav a {
-        margin: 10px 0 0;
-      }
-
       main {
-        padding-top: 120px;
+        margin: 15px;
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <nav>
-      <div><strong>Embassy of Nigeria - Prague</strong></div>
-      <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="consular.html">Consular</a>
-        <a href="visa.html">Visa</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="staff.html">Staff</a>
-        <a href="tourism.html">Tourism</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">Faq</a>
-      </div>
-    </nav>
+    <h1>Embassy of Nigeria, Prague</h1>
+    <p>Official Website</p>
   </header>
 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="visa.html">Visa</a>
+    <a href="news.html">News</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="staff.html">Staff</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">Faq</a>
+  </nav>
+
   <main>
-    <section id="welcome">
-      <h1>Welcome to the Nigerian Embassy in Prague</h1>
-      <p>
-        We are committed to strengthening the bilateral relationship between Nigeria and the Czech Republic,
-        providing consular services, promoting tourism, and supporting Nigerian citizens living in the Czech Republic.
-      </p>
+    <section>
+      <h2>Welcome</h2>
+      <p>Welcome to the official website of the Embassy of Nigeria in Prague. We are here to serve the Nigerian community and strengthen the ties between Nigeria and the Czech Republic.</p>
     </section>
 
-    <section id="mission">
-      <h2 class="section-title">Our Mission</h2>
-      <p>
-        To promote and protect the interests of Nigeria and its citizens in the Czech Republic,
-        enhance diplomatic ties, encourage investment, and support cultural exchange.
-      </p>
-    </section>
-
-    <section id="services">
-      <h2 class="section-title">Our Services</h2>
+    <section>
+      <h2>Upcoming Events</h2>
       <ul>
-        <li>Visa Application and Processing</li>
-        <li>Passport Renewal</li>
-        <li>Document Legalization</li>
-        <li>Assistance for Nigerian Citizens</li>
-        <li>Trade & Investment Promotion</li>
+        <li><strong>Independence Day Celebration</strong> - October 1, 2025</li>
+        <li><strong>Business Forum</strong> - November 12, 2025</li>
+        <li><strong>Nigerian Cultural Night</strong> - December 5, 2025</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>
-        Need assistance or information? Visit our <a href="contact.html" style="color: #00cc66;">Contact Page</a>.
-      </p>
+    <section>
+      <h2>Latest News</h2>
+      <p>Stay updated with announcements and news <a href="news.html">here</a>.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Embassy of Nigeria, Prague. All Rights Reserved.</p>
+    &copy; 2025 Embassy of Nigeria, Prague. All rights reserved.
   </footer>
-
 </body>
 </html>
