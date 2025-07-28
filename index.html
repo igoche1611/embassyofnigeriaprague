@@ -1,127 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embassy of Nigeria - Prague</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embassy of Nigeria, Prague</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    html {
+  overflow-y: scroll;
+}
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background: url('images/image-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
     }
+
     header {
-      background-color: #008753;
+      background-color: rgba(0, 112, 60, 0.85);
       color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
+      text-align: center;
+      padding: 40px 20px;
     }
-    nav ul {
-      list-style: none;
+
+    nav {
+      background-color: rgba(0, 90, 44, 0.9);
       display: flex;
-      gap: 1.2rem;
-      margin: 0;
-      padding: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: 600;
+      margin: 10px 15px;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    .hero {
-      background: url('images/embassy-bg.jpg') center/cover no-repeat;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      padding: 2rem;
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
     }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 1rem;
+
+    section {
+      margin-bottom: 40px;
     }
-    .section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
+
+    h2 {
+      color: #00703c;
     }
-    .section h2 {
-      text-align: center;
-      color: #008753;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
+
     footer {
-      background-color: #008753;
+      background: #333;
       color: white;
       text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
+      padding: 20px;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        margin: 15px;
+        padding: 20px;
+      }
+    }
+    /* Navbar Styling */
+nav {
+  background-color: #006400; /* Nigerian green */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #228B22; /* lighter green on hover */
+}
+    /* Hero Section */
+.hero-section {
+  background-image: url('images/logo-embassy.jpg'); /* use your own image path */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 100, 0, 0.7); /* green tint */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.intro-section, .events-preview {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.events-preview ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.events-preview li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #228B22;
+}
+    @media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+
+  .intro-section, .events-preview {
+    padding: 40px 15px;
+  }
+
+  .events-preview li {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+    .footer {
+  background-color: #024731;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 0.9em;
+}
+
+.footer a {
+  color: #aee8c3;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.8em;
+    padding: 20px 10px;
+  }
+}
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">🇳🇬 Embassy of Nigeria - Prague</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="visa.html">Visa</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="tourism.html">Tourism</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </nav>
+    <h1>Embassy of Nigeria, Prague</h1>
+    <p>Official Website</p>
   </header>
 
-  <section class="hero">
-    <div>
-      <h1>Welcome to the Nigerian Embassy in Prague</h1>
-      <p>Promoting bilateral relations, providing consular services, and supporting Nigerians in the Czech Republic.</p>
-    </div>
-  </section>
+  <nav>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="consular.html">Consular</a>
+    <a href="visa.html">Visa</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="staff.html">Staff</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</nav>
 
-  <section class="section">
-    <h2>Latest News & Announcements</h2>
-    <div class="card">
-      <h3>Important Update on Visa Applications</h3>
-      <p>Visa application procedures have been updated. Please visit the <a href="visa.html">Visa page</a> for full guidelines.</p>
-    </div>
-    <div class="card">
-      <h3>Independence Day Celebration</h3>
-      <p>Join us on October 1st for a special event celebrating Nigeria's Independence Day at the embassy premises.</p>
-    </div>
-  </section>
+  <main>
+    <header class="hero-section">
+  <div class="hero-overlay">
+    <h1>Welcome to the Embassy of Nigeria, Prague</h1>
+    <p>Building strong diplomatic, economic, and cultural ties between Nigeria and the Czech Republic.</p>
+  </div>
+</header>
 
-  <footer>
-    <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
-    <p>Follow us: 🇳🇬 Facebook | Twitter | Instagram</p>
-  </footer>
-</body>
-</html>
+<section class="intro-section">
+  <div class="container">
+    <h2>Our Mission</h2>
+    <p>
+      We are committed to providing excellent consular services to Nigerians in the Czech Republic,
+      promoting Nigeria’s interests, and fostering positive bilateral relations between our nations.
+    </p>
+  </div>
+</section>
+
+<section class="events-preview">
+  <div class="container">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li><strong>August 15:</strong> Business Forum at Prague International Hall</li>
+      <li><strong>September 1:</strong> Nigerian Independence Day Planning Meeting</li>
+      <li><strong>September 20:</strong> Passport Renewal Outreach - Brno</li>
+    </ul>
+    <a href="news.html" class="btn">See All News</a>
+  </div>
+</section>
+
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Independence Day Celebration</strong> - October 1, 2025</li>
+        <li><strong>Business Forum</strong> - November 12, 2025</li>
+        <li><strong>Nigerian Cultural Night</strong> - December 5, 2025</li>
+      </ul>
+    </section>
+
+   <section>
+  <h2>Latest News</h2>
+  <p>Stay updated with announcements and news <a href="news.html">here</a>.</p>
+</section>
+
+<div style="height: 300px;"></div> <!-- This adds scroll space -->
+
+<footer>
+<footer class="footer">
+  <div class="footer-content">
+    <p>© 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
+    <p>
+      Contact: <a href="mailto:info@nigerianembassy.cz">info@nigerianembassy.cz</a><br>
+      Address: Na Zátorce 8, 160 00 Praha 6 - Bubeneč, Czech Republic
+    </p>
+    <p>
+      <a href="https://www.facebook.com/NigerianEmbassyPrague" target="_blank">Facebook</a> |
+      <a href="https://www.twitter.com/NigeriaEmbassyCZ" target="_blank">Twitter</a>
+    </p>
+  </div>
+</footer>
