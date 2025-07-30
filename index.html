@@ -117,6 +117,34 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #228B22; /* lighter green on hover */
 }
+    .vertical-sidebar {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: #004d00; /* Dark green */
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.vertical-sidebar a {
+  color: white;
+  padding: 12px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #ffffff33;
+  transition: background 0.3s;
+}
+
+.vertical-sidebar a:hover {
+  background-color: #006600;
+}
     /* Hero Section */
 .hero-section {
   background-image: url('images/logo-embassy.jpg'); /* use your own image path */
@@ -247,6 +275,12 @@ nav ul li a:hover {
     <a href="faq.html">FAQ</a>
   </nav>
 </nav>
+
+  <div class="vertical-sidebar">
+  <a href="#">🔔 Alerts</a>
+  <a href="#">📰 News</a>
+  <a href="#">📞 Contact</a>
+</div>
 
   <main>
     <header class="hero-section">
