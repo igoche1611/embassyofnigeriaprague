@@ -209,6 +209,37 @@ nav ul li a:hover {
 #verticalSidebar.active {
   right: 0;
 }
+    /* Sidebar base styling */
+#verticalSidebar {
+  position: fixed;
+  top: 60px; /* Adjust to stay below navbar */
+  left: 0;
+  width: 200px;
+  background-color: #024731;
+  color: white;
+  padding: 15px 10px;
+  height: 100%;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+/* Collapsed by default */
+#verticalSidebar.collapsed {
+  transform: translateX(-220px); /* Hide off-screen */
+}
+
+/* Toggle button styling */
+#sidebarToggle {
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  background-color: #008000;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 5px;
+}
     /* Hero Section */
 .hero-section {
   background-image: url('images/logo-embassy.jpg'); /* use your own image path */
@@ -413,6 +444,14 @@ nav ul li a:hover {
 </section>
 
 <div style="height: 300px;"></div> <!-- This adds scroll space -->
+<script>
+  const sidebarToggle = document.getElementById("sidebarToggle");
+  const sidebar = document.getElementById("verticalSidebar");
+
+  sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+  });
+</script>
 
 <footer>
 <footer class="footer">
