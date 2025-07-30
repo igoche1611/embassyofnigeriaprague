@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Embassy of Nigeria, Prague</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Test</title>
+  <style>
+    /* Sidebar styles */
+    #verticalSidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #024731;
+      color: white;
+      padding: 20px 10px;
+      transform: translateX(-220px);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+
+    /* Show when active */
+    #verticalSidebar.show {
+      transform: translateX(0);
+    }
+
+    /* Toggle button */
+    #sidebarToggle {
+  background-color: #008000;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+    /* Link styling */
+    #verticalSidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+
+    /* Optional body padding so content isn't hidden */
+    body {
+      margin-left: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="verticalSidebar">
+    <a href="#">📰 News</a>
+    <a href="#">🛠️ Services</a>
+    <a href="#">📞 Contact</a>
+    <a href="#">🖼️ Gallery</a>
+    <a href="#">❓ FAQ</a>
+  </div>
+
+  <!-- Page Content -->
+  <div style="padding: 100px;">
+    <h1>Welcome to the Embassy Website</h1>
+    <p>This is your homepage content.</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const toggle = document.getElementById("sidebarToggle");
+    const sidebar = document.getElementById("verticalSidebar");
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>
+
   <style>
     html {
   overflow-y: scroll;
@@ -237,6 +320,7 @@ nav ul li a:hover {
 
   <nav>
      <nav>
+  <div id="sidebarToggle">&#9776; Menu</div>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
