@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Embassy of Nigeria, Prague</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <head>
+    <script>
+  const sidebar = document.getElementById('verticalSidebar');
+  const toggle = document.getElementById('sidebarToggle');
+
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+</script>
+    <!-- Toggle Button -->
+<div id="sidebarToggle">&#9776;</div>
+
+<!-- Collapsible Sidebar -->
+<div id="verticalSidebar" class="collapsed">
+  <a href="news.html">📰 News</a>
+  <a href="services.html">🛠️ Services</a>
+  <a href="contact.html">📞 Contact</a>
+  <a href="gallery.html">🖼️ Gallery</a>
+  <a href="faq.html">❓ FAQ</a>
+</div>
+
   <style>
     html {
   overflow-y: scroll;
@@ -144,6 +165,49 @@ nav ul li a:hover {
 
 .vertical-sidebar a:hover {
   background-color: #006600;
+}
+    /* Sidebar */
+#verticalSidebar {
+  position: fixed;
+  top: 100px;
+  right: -130px;
+  width: 120px;
+  background-color: #004d00;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+#verticalSidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff33;
+}
+
+#verticalSidebar a:hover {
+  background-color: #006600;
+}
+
+/* Toggle Button */
+#sidebarToggle {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: #006600;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  z-index: 1000;
+}
+
+/* Sidebar active */
+#verticalSidebar.active {
+  right: 0;
 }
     /* Hero Section */
 .hero-section {
