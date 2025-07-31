@@ -2,239 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Find visa requirements, application processes, and travel information for Nigerian citizens and visitors." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visa - Embassy of Nigeria, Prague</title>
-  <meta name="description" content="Official website of the Nigerian Embassy in Prague. Visa info, consular services, contact details, and more.">
-<meta name="keywords" content="Nigeria Embassy, Prague, Visa, Passport, Consular Services, Nigeria in Czech Republic">
-<meta name="author" content="Embassy of Nigeria, Prague">
-<meta name="robots" content="index, follow">
-<title>Embassy of Nigeria, Prague - Official Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <meta name="description" content="Find visa requirements, application processes, and travel information for Nigerian citizens and visitors." />
+  <meta name="keywords" content="Nigeria Embassy, Prague, Visa, Passport, Consular Services, Nigeria in Czech Republic">
+  <meta name="author" content="Embassy of Nigeria, Prague">
+  <meta name="robots" content="index, follow">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+
   <style>
-   body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: url('images/bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000;
-    }  
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: url('images/image-bg.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000;
-    }
-  nav {
-      background-color: rgba(0, 90, 44, 0.9);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #00703c;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
     }
     header {
-      background-color: rgba(0, 112, 60, 0.85);
+      background-color: #00703c;
       color: white;
       text-align: center;
       padding: 40px 20px;
     }
-
-    nav {
-      background-color: rgba(0, 90, 44, 0.9);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-    body { margin: 0; font-family: 'Open Sans', sans-serif; background: #f4f4f4; }
-    header { background: #00703c; color: white; padding: 20px; text-align: center; }
-    nav { background: #005a2c; padding: 10px; display: flex; justify-content: center; gap: 15px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 900px; margin: auto; background: white; padding: 20px; }
-    footer { background: #333; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
     header h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #004d1a; /* Darker green for headings */
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-}
-button {
-  background-color: #004d1a;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #006622;
-}
-         nav {
-      background-color: rgba(0, 90, 44, 0.9);
+      font-family: 'Montserrat', sans-serif;
+      color: #004d1a;
+    }
+    nav {
+      background-color: #006400;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+      text-align: center;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 10px 0;
+      gap: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-
     nav a {
       color: white;
       text-decoration: none;
-      margin: 10px 15px;
       font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
-
     nav a:hover {
-      text-decoration: underline;
+      background-color: #228B22;
     }
     main {
       max-width: 1000px;
       margin: 30px auto;
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 30px;
+      background-color: white;
+      padding: 40px;
       border-radius: 10px;
     }
-
     section {
       margin-bottom: 40px;
     }
-
     h2 {
-      color: #00703c;
+      color: #026937;
     }
-
     footer {
-      background: #333;
+      background-color: #333;
       color: white;
       text-align: center;
       padding: 20px;
     }
-   @media (max-width: 600px) {
-      header h1 {
-        font-size: 24px;
-      }
+    @media (max-width: 768px) {
       nav {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
       }
       main {
-        margin: 15px;
         padding: 20px;
       }
     }
-    /* Navbar Styling */
-nav {
-  background-color: #006400; /* Nigerian green */
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 0;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #228B22; /* lighter green on hover */
-}
-    /* Responsive adjustments */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav a {
-    margin: 10px 0;
-  }
-  main {
-    padding: 10px;
-    width: 95%;
-  }
-  form input, form textarea, form button {
-    width: 100%;
-    box-sizing: border-box;
-  }
   </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RMW24822E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3RMW24822E');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RMW24822E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3RMW24822E');
+  </script>
 </head>
 <body>
   <header>
@@ -254,61 +110,44 @@ nav ul li a:hover {
     <a href="tourism.html">Tourism</a>
     <a href="faq.html">FAQ</a>
   </nav>
-  <main style="max-width: 1000px; margin: auto; padding: 40px;">
-  <h1 style="text-align: center; margin-bottom: 40px; color: #026937;">Visa Information</h1>
+  <main>
+    <h1 style="text-align: center; margin-bottom: 40px; color: #026937;">Visa Information</h1>
 
-  <section style="margin-bottom: 40px;">
-    <h2 style="color: #026937;">Types of Visas</h2>
-    <ul style="line-height: 1.8;">
-      <li><strong>Tourist Visa:</strong> For leisure visits to Nigeria.</li>
-      <li><strong>Business Visa:</strong> For business-related visits.</li>
-      <li><strong>Diplomatic Visa:</strong> For government officials and diplomats.</li>
-      <li><strong>Transit Visa:</strong> For short stays between destinations.</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Types of Visas</h2>
+      <ul style="line-height: 1.8;">
+        <li><strong>Tourist Visa:</strong> For leisure visits to Nigeria.</li>
+        <li><strong>Business Visa:</strong> For business-related visits.</li>
+        <li><strong>Diplomatic Visa:</strong> For government officials and diplomats.</li>
+        <li><strong>Transit Visa:</strong> For short stays between destinations.</li>
+      </ul>
+    </section>
 
-  <section style="margin-bottom: 40px;">
-    <h2 style="color: #026937;">General Requirements</h2>
-    <ul style="line-height: 1.8;">
-      <li>Valid passport (minimum 6 months validity).</li>
-      <li>Completed visa application form.</li>
-      <li>Recent passport-sized photographs.</li>
-      <li>Proof of accommodation and return flight.</li>
-      <li>Letter of invitation (if applicable).</li>
-    </ul>
-  </section>
+    <section>
+      <h2>General Requirements</h2>
+      <ul style="line-height: 1.8;">
+        <li>Valid passport (minimum 6 months validity).</li>
+        <li>Completed visa application form.</li>
+        <li>Recent passport-sized photographs.</li>
+        <li>Proof of accommodation and return flight.</li>
+        <li>Letter of invitation (if applicable).</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 style="color: #026937;">How to Apply</h2>
-    <ol style="line-height: 1.8;">
-      <li>Visit the Nigerian Immigration portal: <a href="https://portal.immigration.gov.ng" target="_blank">portal.immigration.gov.ng</a></li>
-      <li>Fill and submit the visa form.</li>
-      <li>Pay the visa fee online.</li>
-      <li>Book an appointment with the embassy.</li>
-      <li>Attend your appointment with all required documents.</li>
-    </ol>
-  </section>
-
-<section style="margin-bottom: 40px;">
-    <h2 style="color: #026937;"></h2>
-    <ul style="line-height: 1.8;">
-      <>).
-      <>
-      <>
-      <>
-      <>
-    </>
-  </section>
- <section style="margin-bottom: 40px;">
-    <h2 style="color: #026937;"></h2>
-    <ul style="line-height: 1.8;">
-      
-  </section>
-</main>
-
+    <section>
+      <h2>How to Apply</h2>
+      <ol style="line-height: 1.8;">
+        <li>Visit the Nigerian Immigration portal: <a href="https://portal.immigration.gov.ng" target="_blank">portal.immigration.gov.ng</a></li>
+        <li>Fill and submit the visa form.</li>
+        <li>Pay the visa fee online.</li>
+        <li>Book an appointment with the embassy.</li>
+        <li>Attend your appointment with all required documents.</li>
+      </ol>
+    </section>
+  </main>
   <footer>
-  <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
-  <p style="font-size: 14px;">Website developed with support by the Embassy Web Team.</p>
-</footer>
+    <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
+    <p style="font-size: 14px;">Website developed with support by the Embassy Web Team.</p>
+  </footer>
 </body>
 </html>
