@@ -10,6 +10,7 @@
   <title>About - Embassy of Nigeria, Prague</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+
   <style>
     body {
       margin: 0;
@@ -25,9 +26,10 @@
       text-align: center;
     }
 
-    header h1, h2, h3 {
+    header h1 {
       font-family: 'Montserrat', sans-serif;
-      color: #004d1a;
+      margin: 0;
+      font-size: 2rem;
     }
 
     nav {
@@ -37,7 +39,6 @@
       top: 0;
       z-index: 1000;
       padding: 15px 0;
-      text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
@@ -49,10 +50,6 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
-    }
-
-    nav ul li {
-      display: inline-block;
     }
 
     nav ul li a {
@@ -70,18 +67,46 @@
 
     main {
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 40px auto;
       background-color: white;
       padding: 40px;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    section {
-      margin-bottom: 40px;
+    .about-header {
+      text-align: center;
+      color: #026937;
+      font-size: 2rem;
+      margin-bottom: 30px;
     }
 
-    h2 {
-      color: #00703c;
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 1 1 60%;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .about-text h3 {
+      color: #026937;
+      margin-top: 25px;
+    }
+
+    .about-image {
+      flex: 1 1 35%;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -89,6 +114,7 @@
       color: white;
       text-align: center;
       padding: 20px;
+      font-size: 14px;
     }
 
     @media (max-width: 768px) {
@@ -96,9 +122,14 @@
         flex-direction: column;
         align-items: center;
       }
+
       main {
         padding: 20px;
         width: 95%;
+      }
+
+      .about-container {
+        flex-direction: column;
       }
     }
   </style>
@@ -113,6 +144,7 @@
   </script>
 </head>
 <body>
+
   <header>
     <h1>Embassy of Nigeria, Prague</h1>
     <p>About Us</p>
@@ -135,33 +167,34 @@
   </nav>
 
   <main>
-    <h1 style="text-align: center; color: #026937;">About the Embassy</h1>
-    <div style="display: flex; flex-wrap: wrap; gap: 40px;">
-      <div style="flex: 1 1 60%;">
-        <p style="line-height: 1.7; font-size: 1.05rem;">
+    <div class="about-header">About the Embassy</div>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
           The Embassy of the Federal Republic of Nigeria in Prague represents the interests of Nigeria and her citizens in the Czech Republic.
           Our mission is to foster strong diplomatic, economic, and cultural relations between Nigeria and the Czech Republic.
         </p>
 
-        <h3 style="margin-top: 25px; color: #026937;">Our Mission</h3>
-        <p style="line-height: 1.7;">
+        <h3>Our Mission</h3>
+        <p>
           To serve Nigerians in the Czech Republic with professionalism and to strengthen bilateral cooperation in trade, education, and governance.
         </p>
 
-        <h3 style="margin-top: 25px; color: #026937;">Our Vision</h3>
-        <p style="line-height: 1.7;">
+        <h3>Our Vision</h3>
+        <p>
           A progressive diplomatic presence that promotes Nigeria’s values, protects her citizens, and facilitates meaningful engagements with the Czech people.
         </p>
       </div>
-      <div style="flex: 1 1 35%;">
-        <img src="images/image-bg.jpg" alt="Embassy Building" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div class="about-image">
+        <img src="images/image-bg.jpg" alt="Embassy Building">
       </div>
     </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
-    <p style="font-size: 14px;">Website developed with support by the Embassy Web Team.</p>
+    <p>Website developed with support by the Embassy Web Team.</p>
   </footer>
+
 </body>
 </html>
