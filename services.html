@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services - Embassy of Nigeria, Prague</title>
   <meta name="description" content="Explore the consular and administrative services provided by the Nigerian Embassy in Prague." />
-  <meta name="keywords" content="Nigeria Embassy, Prague, Visa, Passport, Consular Services, Nigeria in Czech Republic">
-  <meta name="author" content="Embassy of Nigeria, Prague">
-  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Nigeria Embassy, Prague, Visa, Passport, Consular Services, Nigeria in Czech Republic" />
+  <meta name="author" content="Embassy of Nigeria, Prague" />
+  <meta name="robots" content="index, follow" />
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -27,9 +27,15 @@
       text-align: center;
     }
 
-    header h1, h2, h3 {
+    header h1 {
       font-family: 'Montserrat', sans-serif;
-      color: #004d1a;
+      margin: 0;
+      color: white;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 5px;
     }
 
     nav {
@@ -37,58 +43,64 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      padding: 15px 0;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
+      justify-content: center;
+      gap: 12px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      padding: 10px 15px;
+      font-weight: 600;
+      padding: 8px 14px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #228B22;
+      background-color: #228b22;
     }
 
     main {
-      max-width: 1200px;
-      margin: 30px auto;
-      background-color: white;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
       padding: 40px;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 30px;
       color: #026937;
+      margin-bottom: 40px;
     }
 
     .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      gap: 25px;
     }
 
     .service-card {
       background: #f7f7f7;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
     }
 
     .service-card h3 {
-      color: #026937;
       margin-top: 0;
+      color: #026937;
+      font-family: 'Montserrat', sans-serif;
     }
 
     footer {
@@ -96,15 +108,12 @@
       color: white;
       text-align: center;
       padding: 20px;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
       main {
         padding: 20px;
-      }
-      nav {
-        flex-direction: column;
-        gap: 10px;
       }
     }
   </style>
@@ -118,7 +127,6 @@
     gtag('config', 'G-3RMW24822E');
   </script>
 </head>
-
 <body>
   <header>
     <h1>Embassy of Nigeria, Prague</h1>
@@ -141,7 +149,6 @@
 
   <main>
     <h1>Our Services</h1>
-
     <div class="service-grid">
       <div class="service-card">
         <h3>Passport Services</h3>
@@ -167,7 +174,7 @@
 
   <footer>
     <p>&copy; 2025 Embassy of Nigeria, Prague. All rights reserved.</p>
-    <p style="font-size: 14px;">Website developed with support by the Embassy Web Team.</p>
+    <p>Website developed with support by the Embassy Web Team.</p>
   </footer>
 </body>
 </html>
